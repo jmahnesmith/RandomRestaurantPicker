@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Random-Restaurant-Picker</string>
+    <string name="ButtonTxt">Find a Restaurant</string>
+    <string name="goToRestrauntButton">Go to Restaurant!</string>
+</resources>

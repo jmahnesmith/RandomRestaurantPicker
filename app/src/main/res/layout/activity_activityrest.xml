@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradientbackground"
+    tools:context=".activityrest"
+
+    >
+
+    <ImageView
+        android:id="@+id/restaurantImage"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+
+        android:adjustViewBounds="true"
+        android:contentDescription="Image"
+        android:scaleType="fitXY"
+        android:visibility="gone"
+        app:srcCompat="@drawable/gradientbackground" />
+
+    <LinearLayout
+        android:id="@+id/linlaHeaderProgress"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ProgressBar
+            android:id="@+id/pbHeaderProgress"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></ProgressBar>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/restaurantName"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:autoSizeMaxTextSize="80sp"
+        android:autoSizeMinTextSize="12sp"
+        android:autoSizeStepGranularity="2sp"
+        android:autoSizeTextType="uniform"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center"
+        android:shadowColor="@color/colorPrimaryDark"
+        android:shadowDx="1.5"
+        android:shadowDy="1.3"
+        android:shadowRadius="1.6"
+        android:text=""
+        android:textAlignment="gravity"
+        android:textColor="@color/graylight"
+        tools:layout_editor_absoluteY="747dp" />
+
+    <Button
+        android:id="@+id/goToRestrauntButton"
+        style="@android:style/Widget.DeviceDefault.Button"
+        android:layout_width="222dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="94dp"
+        android:layout_marginEnd="95dp"
+        android:background="@color/button"
+        android:text="@string/goToRestrauntButton"
+        android:textAllCaps="true"
+        android:textColor="@color/graylight"
+        android:textStyle="italic"
+        android:visibility="gone"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="667dp"
+        tools:text="@string/goToRestrauntButton" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
