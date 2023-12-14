@@ -94,7 +94,7 @@ public class getYelpBuisnessesTask extends AsyncTask<Object,Void,ArrayList<Buisn
 
         Request request = new Request.Builder()
                 .url("https://api.yelp.com/v3/businesses/search?categories=Restaurants&latitude=" + latitude + "&longitude=" + longitude)
-                .addHeader("Authorization", "Bearer 0-WoLcstf08d_rXLPO1zSIe-VnBlDwLt0pQzhdu3eFqSBQNQoDHqTrrMcqfB--gRsENuLIAunA1Dsahd_6drFDEogDkyMo_ifi5JM3_PDAkJL_0kLIsCWKoxM7iWW3Yx")
+                .addHeader("Authorization", "")
                 .get()
                 .build();
 
